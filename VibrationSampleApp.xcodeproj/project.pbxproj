@@ -13,7 +13,34 @@
 		9A987CB024DABE1100D4C359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A987CAE24DABE1100D4C359 /* Main.storyboard */; };
 		9A987CB224DABE1100D4C359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A987CB124DABE1100D4C359 /* Assets.xcassets */; };
 		9A987CB524DABE1100D4C359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A987CB324DABE1100D4C359 /* LaunchScreen.storyboard */; };
+		9A987CC324DABE4C00D4C359 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A987CC224DABE4C00D4C359 /* KeyboardViewController.swift */; };
+		9A987CC724DABE4C00D4C359 /* SampleKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A987CC024DABE4C00D4C359 /* SampleKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A987CCF24DABE8E00D4C359 /* SampleKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A987CCE24DABE8E00D4C359 /* SampleKeyboard.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A987CC524DABE4C00D4C359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A987C9D24DABE1100D4C359 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A987CBF24DABE4C00D4C359;
+			remoteInfo = SampleKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A987CCB24DABE4C00D4C359 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A987CC724DABE4C00D4C359 /* SampleKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9A987CA524DABE1100D4C359 /* VibrationSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibrationSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		9A987CB124DABE1100D4C359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A987CB424DABE1100D4C359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A987CB624DABE1100D4C359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A987CC024DABE4C00D4C359 /* SampleKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A987CC224DABE4C00D4C359 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		9A987CC424DABE4C00D4C359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A987CCE24DABE8E00D4C359 /* SampleKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A987CA224DABE1100D4C359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A987CBD24DABE4C00D4C359 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				9A987CA724DABE1100D4C359 /* VibrationSampleApp */,
+				9A987CC124DABE4C00D4C359 /* SampleKeyboard */,
 				9A987CA624DABE1100D4C359 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9A987CA524DABE1100D4C359 /* VibrationSampleApp.app */,
+				9A987CC024DABE4C00D4C359 /* SampleKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,16 @@
 			path = VibrationSampleApp;
 			sourceTree = "<group>";
 		};
+		9A987CC124DABE4C00D4C359 /* SampleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9A987CC224DABE4C00D4C359 /* KeyboardViewController.swift */,
+				9A987CC424DABE4C00D4C359 /* Info.plist */,
+				9A987CCE24DABE8E00D4C359 /* SampleKeyboard.xib */,
+			);
+			path = SampleKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +127,34 @@
 				9A987CA124DABE1100D4C359 /* Sources */,
 				9A987CA224DABE1100D4C359 /* Frameworks */,
 				9A987CA324DABE1100D4C359 /* Resources */,
+				9A987CCB24DABE4C00D4C359 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9A987CC624DABE4C00D4C359 /* PBXTargetDependency */,
 			);
 			name = VibrationSampleApp;
 			productName = VibrationSampleApp;
 			productReference = 9A987CA524DABE1100D4C359 /* VibrationSampleApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9A987CBF24DABE4C00D4C359 /* SampleKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A987CC824DABE4C00D4C359 /* Build configuration list for PBXNativeTarget "SampleKeyboard" */;
+			buildPhases = (
+				9A987CBC24DABE4C00D4C359 /* Sources */,
+				9A987CBD24DABE4C00D4C359 /* Frameworks */,
+				9A987CBE24DABE4C00D4C359 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleKeyboard;
+			productName = SampleKeyboard;
+			productReference = 9A987CC024DABE4C00D4C359 /* SampleKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +166,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					9A987CA424DABE1100D4C359 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					9A987CBF24DABE4C00D4C359 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -115,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				9A987CA424DABE1100D4C359 /* VibrationSampleApp */,
+				9A987CBF24DABE4C00D4C359 /* SampleKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +200,14 @@
 				9A987CB524DABE1100D4C359 /* LaunchScreen.storyboard in Resources */,
 				9A987CB224DABE1100D4C359 /* Assets.xcassets in Resources */,
 				9A987CB024DABE1100D4C359 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A987CBE24DABE4C00D4C359 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A987CCF24DABE8E00D4C359 /* SampleKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A987CBC24DABE4C00D4C359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A987CC324DABE4C00D4C359 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A987CC624DABE4C00D4C359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A987CBF24DABE4C00D4C359 /* SampleKeyboard */;
+			targetProxy = 9A987CC524DABE4C00D4C359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9A987CAE24DABE1100D4C359 /* Main.storyboard */ = {
@@ -284,6 +381,7 @@
 		9A987CBA24DABE1100D4C359 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +400,7 @@
 		9A987CBB24DABE1100D4C359 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +411,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanjewar.VibrationSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A987CC924DABE4C00D4C359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanjewar.VibrationSampleApp.SampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A987CCA24DABE4C00D4C359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanjewar.VibrationSampleApp.SampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +469,15 @@
 			buildConfigurations = (
 				9A987CBA24DABE1100D4C359 /* Debug */,
 				9A987CBB24DABE1100D4C359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A987CC824DABE4C00D4C359 /* Build configuration list for PBXNativeTarget "SampleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A987CC924DABE4C00D4C359 /* Debug */,
+				9A987CCA24DABE4C00D4C359 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
